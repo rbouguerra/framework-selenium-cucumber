@@ -3,7 +3,7 @@ package com.e2eTest.automation.authentification.stepDefinitions;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
 
 import com.e2eTest.automation.authentification.pageObjects.AuthentificationPage;
 import com.e2eTest.automation.util.CommonMethods;
