@@ -27,14 +27,34 @@ public class AdminStepDefinition {
 		adminPage.clickModuleAdmin();
 	}
 
+	@When("^je clique sur un nom d utilisateur affiché dans le tableau$")
+	public void je_clique_sur_un_nom_d_utilisateur_affiché_dans_le_tableau() throws Throwable {
+		adminPage.clickLienTextUserName();
+	}
+
+	@When("^je clique sur le bouton Edit$")
+	public void je_clique_sur_le_bouton_Edit() throws Throwable {
+		adminPage.clickButtonEdit();
+	}
+
+	@When("^je copie le contenu nom employee$")
+	public void je_copie_le_contenu_nom_employee() throws Throwable {
+		adminPage.copyNameEmpl();
+	}
+
+	@When("^je clique sur le bouton Cancel$")
+	public void je_clique_sur_le_bouton_Cancel() throws Throwable {
+		adminPage.clickButtonCancel();
+	}
+
 	@When("^je clique sur le bouton Add$")
 	public void je_clique_sur_le_bouton_Add() throws Throwable {
 		adminPage.clickButtonAdd();
 	}
 
-	@When("^je saisie nom employee \"([^\"]*)\"$")
-	public void je_saisie_nom_employee(String name) throws Throwable {
-		adminPage.sendEmplName(name);
+	@When("^je colle nom employee$")
+	public void je_colle_nom_employee() throws Throwable {
+		adminPage.pasteEmplName();
 	}
 
 	@When("^je saisie nom d utilisateur \"([^\"]*)\"$")
